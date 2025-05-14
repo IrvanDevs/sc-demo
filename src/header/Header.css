@@ -1,0 +1,130 @@
+.Header-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100px;
+  width: 100vw;
+  position: fixed;
+  top: 35px;
+  z-index: 1000;
+}
+
+.Header-container a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Header-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 50px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.Header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Header-logo {
+  width: 150px;
+  height: auto;
+  pointer-events: none;
+  margin-top: 5px;
+}
+
+.Nav-menu {
+  display: flex;
+  gap: 90px;
+}
+
+.Nav-menu a {
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--dark-blue);
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+}
+
+.Nav-menu a:hover,
+.Nav-menu a.active {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+/* Burger Menu */
+.Burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.Burger-menu .bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--dark-blue);
+  transition: 0.5s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Header-wrapper {
+    width: 95%;
+    padding: 15px 20px;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .Nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background-color: white;
+    width: 90%;
+    align-items: center;
+    padding: 0;
+    padding-top: 15px;
+    gap: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: -999;
+    overflow: hidden;
+    height: 0;
+  }
+
+  .Burger-menu {
+    display: flex;
+  }
+
+  .Burger-menu.active .bar:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+
+  .Burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .Burger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+  }
+
+  .Nav-menu a {
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}

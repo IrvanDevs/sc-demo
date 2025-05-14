@@ -1,0 +1,93 @@
+.Mcn-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.Mcn-container .Menu{
+    text-align: center;
+    max-width: 100%;
+    padding: 20px 180px;
+}
+
+.Mcn-container .Title-wrapper{
+    justify-content: center;
+}
+
+.Mcn-wrapper {
+    position: relative;
+}
+
+.Mcn-content{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.McnSlider-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.McnSlider-button:hover {
+    opacity: 1;
+}
+
+.McnSlider-button:active {
+    opacity: 0.5;
+}
+
+.McnSlider-wrapper .McnSlider-button:first-child{
+    position: absolute;
+    left: 54%;
+}
+
+.McnSlider-wrapper .McnSlider-button:last-child{
+    position: absolute;
+    right: -7%;
+}
+
+@media (max-width: 1440px) {
+    .Mcn-container .Menu{
+        max-width: 85%;
+        padding: 20px;
+    }
+
+    
+    .Mcn-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .McnSlider-button {
+        top: 64%;
+    }
+    
+    .McnSlider-wrapper .McnSlider-button:first-child{
+        position: absolute;
+        left: -12%;
+    }
+    
+    .McnSlider-wrapper .McnSlider-button:last-child{
+        position: absolute;
+        right: -12%;
+    }
+}

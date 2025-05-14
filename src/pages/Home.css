@@ -1,0 +1,43 @@
+.Services-container {
+    width: 100%;
+    background: 
+        url('/src/images/pattern.png') repeat , /* Pattern looping */
+        linear-gradient(to top, #123b8d, #42b6e5); /* Gradient utama */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Service-1 {
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.Service-1 .Livestreaming {
+    flex: 1;
+    max-width: 100%;
+}
+
+.Service-1 .Shortvideo {
+    flex: 1;
+    max-width: 100%;
+}
+
+.Service-1 .Mcn {
+    flex: 1;
+    max-width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .Service-1 {
+        flex-direction: column;
+    }
+}

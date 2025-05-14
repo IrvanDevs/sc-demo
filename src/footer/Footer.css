@@ -1,0 +1,133 @@
+.Footer-container{
+    background-color: var(--dark-blue);
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #ffffff63;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Footer-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.Footer-container a:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+.Footer-container p{
+    margin: 0;
+}
+
+.Footer-content{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    margin: 70px 0;
+}
+
+.Footer-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.Footer-logo{
+    height: 50px;
+    pointer-events: none;
+}
+
+.Footer-contact{
+    margin-top: 30px;
+}
+
+.Footer-highlight{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.Contact-name{
+    display: flex;
+    gap: 10px;
+}
+
+.Contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.Contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+.Contact-list.First-contact{
+    margin-top: 15px;
+}
+
+.Contact-list-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Email-cc{
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.Footer-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: right;
+    width: 40%;
+}
+
+.Address-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+.Address-title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Sc-name{
+    font-weight: 600;
+}
+
+.Maps-embed{
+    border: none;
+    border-radius: 20px;
+}
+
+.Copyright-wrapper{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f3074;
+}
+
+.Copyright-year{
+    margin-top: 3px !important;
+    font-size: 14px;
+}

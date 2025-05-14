@@ -1,0 +1,117 @@
+.Shop-scroll {
+    position: relative;
+    width: 78%;
+    max-width: 78%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Shop-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Shop-container .Menu{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.Shop-container .Title-wrapper{
+    justify-content: center;
+}
+
+.Shop-wrapper {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* ganti dari hidden ke auto */
+    scroll-behavior: smooth;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+.Scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: scale(1.5) translateY(-50%);
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    z-index: 10;
+}
+
+.Scroll-button:hover {
+    color: white;
+    transform: scale(1.8) translateY(-40%);
+}
+
+.Scroll-button:active {
+    color: rgba(255, 255, 255, 0.651);
+    transform: scale(1.5) translateY(-50%);
+}
+
+.Scroll-button.left {
+    left: -50px;
+}
+
+.Scroll-button.right {
+    right: -50px;
+}
+
+.scroll-indicator {
+    width: 5%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.144);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.scroll-progress {
+    height: 100%;
+    background: #ffffff;
+    width: 0%;
+    transition: width 0.2s ease-in-out;
+}
+
+@media (max-width: 1024px){
+    .Shop-scroll {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Shop-container .Menu{
+        max-width: 80%;
+        padding: 20px 40px;
+    }
+
+    .Shop-wrapper {
+      scroll-snap-type: x mandatory;
+    }
+  
+    .Shop-wrapper > * {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+    }
+    .Scroll-button.left {
+        left: -30px;
+    }
+    .Scroll-button.right {
+        right: -30px;
+    }
+    
+}
+  

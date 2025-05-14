@@ -1,0 +1,54 @@
+.Ads-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Ads-container .Menu{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 40px;
+}
+
+.Ads-container .Title-wrapper{
+    justify-content: center;
+}
+
+.Ads-category{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1190px;
+}
+
+.Ads-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px){
+    .Ads-container .Menu{
+        max-width: 80%;
+    }
+    .Ads-category{
+        flex-direction: column;
+    }
+}
+@media (max-width: 425px){
+    .Ads-category{
+        gap: 20px;
+    }
+}

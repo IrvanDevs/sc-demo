@@ -1,0 +1,145 @@
+.History-container {
+    height: 100vh;
+    background: linear-gradient(to top, #123b8d, #42b6e5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.History-title {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+    margin: 0;
+    margin-top: 160px;
+}
+
+.History-title span{
+    font-weight: 400;
+    letter-spacing: 25px;
+    padding-left: 25px;
+}
+
+.History-content {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.History-seg1{
+    margin-top: 5px;
+}
+
+.History-seg1-year {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.History-seg1-year .year-box {
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.History-seg1-year .line {
+    width: 380px;
+    height: 2px;
+    background-color: white;
+}
+
+.Seg1-info{
+    margin-top: 20px;
+}
+
+.Info-wrapper{
+    border: 1px solid var(--dark-blue);
+    margin-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Info-title{
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 15px;
+    padding-top: 7px;
+}
+
+.Info-title span{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.Partner-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Partner-logo img{
+    pointer-events: none;
+    width: 70px;
+}
+
+.Partner-logo img:nth-child(4){
+    margin-right: 15px;
+    width: 100px;
+}
+
+.National-B2B{
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+
+.History-seg2 .Year-2023{
+    background-color: var(--dark-blue);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.Seg2-info{
+    margin-top: 20px;
+}
+
+.Split-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Split{
+    width: 49.5%;
+}

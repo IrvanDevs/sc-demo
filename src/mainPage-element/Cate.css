@@ -1,0 +1,103 @@
+.Cate-container {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.Charts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.Title {
+    color: var(--dark-blue);
+    text-align: left;
+    font-size: 40px;
+    line-height: 35px;
+    white-space: nowrap;
+    transform: scale(0.8);
+    transition: opacity 1s ease, transform 1s ease;
+    white-space: nowrap;
+}
+
+.Title .Cate-title1{
+    font-weight: 300;
+}
+
+.Title .Cate-title2{
+    font-weight: 700;
+    margin-top: -40px;
+}
+
+.Title.pop-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Reponsive Styles*/
+@media (max-width: 870px) {
+    .Charts {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .Title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Cate-container {
+        margin: 0 auto;
+        margin-bottom: 35px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .Charts {
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 0;
+        gap: 50px;
+    }
+
+    .Title {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center; 
+        order: -1;
+    }
+    .Title .Cate-title2{
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 530px) {
+    .Charts {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Cate-container {
+        width: 100%;
+    }
+
+    .Title {
+        font-size: 30px;
+    }
+
+    .Title .Cate-title2{
+        margin-top: -29px;
+    }
+}

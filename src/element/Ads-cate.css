@@ -1,0 +1,49 @@
+.Adscate-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Adscate-wrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 50px 20px;
+    width: 580px;
+    height: 250px;
+    color: var(--dark-blue);
+}
+
+.Adscate-titlewrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Adscate-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase
+}
+
+.AVGRoas-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AVGRoas{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.AVGRoas-desc{
+    margin: 0;
+    font-weight: 500;
+}

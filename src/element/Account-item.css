@@ -1,0 +1,55 @@
+.Account-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 25px;
+}
+
+.Account-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.Account{
+    width: 420px;
+    pointer-events: none;
+}
+
+.Desc-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Account-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    border: 1.5px solid var(--dark-blue);
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.Account-highlight{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.Account-desc p{
+    margin: 0;
+}
+
+.Account-content{
+    margin: 0;
+    width: 550px;
+    pointer-events: none;
+}

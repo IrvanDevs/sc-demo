@@ -1,0 +1,107 @@
+.Metrics-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.Metrics-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 30px 15px 30px 15px;
+    width: 100%;
+    height: 130px;
+}
+
+.Metrics-contentWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.Metrics-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.Account-title {
+    margin: 0;
+}
+
+.Category-title {
+    font-weight: 500;
+    margin: 0;
+}
+
+.Metrics-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.Count {
+    color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Count p {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.PlayFull-video {
+    border: 1px solid var(--dark-blue);
+    width: 75%;
+    height: 30px;
+    padding: 4px 10px;
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.PlayFull-video:hover {
+    background-color: var(--dark-blue);
+    opacity: 0.9;
+}
+
+.Video-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Tiktok-wrapper {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 9 / 16;
+    position: relative;
+}
+
+.Tiktok-embed {
+    width: 320px;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+}

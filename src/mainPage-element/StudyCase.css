@@ -1,0 +1,123 @@
+.Scroll-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, #123b8d, #42b6e5);
+}
+
+.Scroll-wrapper {
+    display: flex;
+    width: max-content;
+    height: 100vh;
+    padding-left: 150px;
+}
+
+
+.Scroll-content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Scroll-content img {
+    max-width: 85%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 20px;
+    filter: drop-shadow(1px 1px 10px #ffffff6b);
+    transition: 0.3s;
+}
+
+.Scroll-content img.odd:hover {
+    transform: scale(1.04) rotate(2deg);
+}
+
+.Scroll-content img.even:hover {
+    transform: scale(1.04) rotate(-2deg); 
+}
+
+.Lower-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.Scroll-text{
+    position: absolute;
+    bottom: 160px;
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.Lower-1 {
+    position: absolute;
+    bottom: 70px;
+    opacity: 0.1;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 30px;
+}
+
+.Lower-2 {
+    position: relative;
+    bottom: 90px;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+/* CSS Update for Responsiveness */
+@media (max-width: 768px) {
+    .Scroll-container{
+        overflow: hidden;
+    }
+
+    .Scroll-wrapper {
+      flex-wrap: nowrap;
+      display: flex;
+      padding-left: 20px;
+    }
+  
+    .Scroll-content {
+      margin-right: 10px;
+    }
+  
+    .Scroll-content img {
+      max-width: 95%;
+      max-height: 65vh;
+    }
+
+    .Scroll-text{
+        position: absolute;
+        bottom: 50px;
+        order: 1;
+    }
+
+    .Lower-1 {
+        bottom: 80px;
+        text-align: center;
+        opacity: 0.1;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 10px;
+    }
+
+    .Lower-2 {
+        bottom: 90px;
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+    
+    .Scroll-content img.odd:hover, .Scroll-content img.even:hover{
+        transform: none;
+    }
+
+}

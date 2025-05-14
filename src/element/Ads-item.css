@@ -1,0 +1,51 @@
+.AdsItem-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AdsItem-wrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-radius: 50px 20px;
+    width: 280px;
+    height: 200px;
+    padding: 30px 0;
+    color: var(--dark-blue);
+}
+
+.Logo-wrapper{
+    width: 70%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Roas-logo{
+    max-width: 150px;
+    pointer-events: none;
+}
+
+.Roas-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Roas{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.Roas-desc{
+    margin: 0;
+    font-weight: 500;
+}

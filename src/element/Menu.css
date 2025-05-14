@@ -1,0 +1,87 @@
+.Menu{
+    background-color: #ffffff;
+    border-radius: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+    padding-bottom: 40px;
+}
+
+.Title-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark-blue);
+}
+
+.Menu-title{
+    color: var(--dark-blue);
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.Menu-desc{
+    font-size: 15px;
+    color: var(--dark-blue);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.View-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 45px;
+}
+
+.Menu-link{
+    text-decoration: none;
+}
+
+.View-button span{
+    text-align: center;
+    border: 1px solid var(--dark-blue);
+    border-radius: 500px;
+    padding: 10px 25px;
+    font-size: 18px;
+    color: var(--dark-blue);
+    transition: .5s ease;
+}
+
+.View-button span:hover{
+    border: 1px solid #ffffff;
+    background-color: var(--dark-blue);
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .Menu{
+        text-align: center;
+    }
+    .Title-wrapper{
+        justify-content: center;
+    }   
+
+    .Menu-title{
+        font-size: 18px;
+    }
+    
+    .Menu-desc{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .Menu-title{
+        font-size: 17px;
+    }
+
+    .Menu-desc{
+        font-size: 12px;
+    }
+}

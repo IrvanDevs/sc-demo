@@ -1,0 +1,87 @@
+.ShortVideo-container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Shortvideo .Menu{
+    margin-top: 200px;
+}
+
+.ShortVideo-wrapper {
+    position: relative;
+}
+
+.Slider-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.Slider-button:hover {
+    opacity: 1;
+}
+
+.Slider-button:active {
+    opacity: 0.5;
+}
+
+.Slidebtn-wrapper .Slider-button:first-child{
+    position: absolute;
+    left: -15%;
+}
+
+.Slidebtn-wrapper .Slider-button:last-child{
+    position: absolute;
+    right: -15%;
+}
+
+@media (max-width: 1440px) {
+    .Shortvideo .Menu{
+        margin-top: 0;
+        width: 100%;
+    }
+    .ShortVideo-container{
+        gap: 50px;
+    }
+    .Slidebtn-wrapper .Slider-button:first-child{
+        left: -13%;
+    }
+
+    .Slidebtn-wrapper .Slider-button:last-child{
+        right: -13%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ShortVideo-container{
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .Shortvideo .Menu{
+        text-align: center;
+        padding: 20px;
+    }
+    .Shortvideo .Title-wrapper{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+
+}

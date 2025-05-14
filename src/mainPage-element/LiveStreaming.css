@@ -1,0 +1,86 @@
+.LiveStreaming-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.Livestreaming .Menu{
+    margin-bottom: 200px;
+}
+
+.LiveVideo-container{
+    position: relative;
+}
+
+.Phone{
+    width: 360px;
+    position: relative;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.LiveVideo-container Video{
+    width: 325px;
+}
+
+.Live-video{
+    position: absolute;
+    right: 5%;
+    top: 12px;
+    border-radius: 50px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@media (max-width: 1440px) {
+    .Livestreaming .Menu{
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .LiveStreaming-container{
+        flex-direction: column;
+    }
+
+    .Livestreaming .Menu{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Livestreaming .Title-wrapper{
+        justify-content: center;
+    }
+
+    .Phone{
+        width: 350px;
+    }
+    
+    .LiveVideo-container Video{
+        width: 315px;
+    }
+
+    .Live-video{
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .Phone{
+        width: 210px;
+    }
+    
+    .LiveVideo-container Video{
+        width: 190px;
+    }
+    
+    .Live-video{
+        border-radius: 20px;
+        top: 10px
+    }
+}

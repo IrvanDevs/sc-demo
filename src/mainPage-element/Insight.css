@@ -1,0 +1,130 @@
+.Insight-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Insight-container .Menu{
+    margin-top: 30px;
+    max-width: 90%;
+    text-align: center;
+    padding: 20px 130px;
+}
+
+.Insight-container .Title-wrapper{
+    justify-content: center;
+}
+
+.Insight-wrapper {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0 140px;
+    max-width: 80%;
+    min-height: 530px;
+    max-height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Insight-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Insight-slider {
+    color: var(--dark-blue);
+    position: absolute;
+    top: 50%;
+    transform: scale(1.5) translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.Insight-slider:hover {
+    color: black;
+    transform: scale(1.8) translateY(-40%);
+}
+
+.Insight-slider:active {
+    color: var(--dark-blue);
+    transform: scale(1.5) translateY(-50%);
+}
+
+.Insight-slider.left {
+    left: -30px;
+}
+
+.Insight-slider.right {
+    right: -40px;
+}
+
+@media (max-width: 1092px){
+    .Insight-wrapper {
+        max-width: 70%;
+    }
+
+    .Insight-slider.left {
+        left: -12px;
+    }
+    
+    .Insight-slider.right {
+        right: -20px;
+    }
+}
+
+
+@media (max-width: 827px){
+    .Insight-container .Menu{
+        padding: 10px 50px;
+        max-width: 70%;
+    }
+    .Insight-wrapper {
+        min-height: 650px;
+        max-height: 650px;
+        max-width: 60%;
+    }
+    .Insight-container .Menu-desc{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:  473px){
+    .Insight-wrapper {
+        min-height: 500px;
+        max-height: 500px;
+    }
+    .Insight-container .Menu{
+        max-width: 60%;
+    }
+    .Insight-slider.left {
+        left: 25px;
+    }
+    .Insight-slider.right {
+        right: 25px;
+    }
+}
+
+@media (max-width:  375px){
+    .Insight-wrapper {
+        min-height: 470px;
+        max-height: 470px;
+    }
+
+    .Insight-slider.left {
+        left: 45px;
+    }
+    
+    .Insight-slider.right {
+        right: 50px;
+    }
+}

@@ -1,0 +1,138 @@
+.Insightitem-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.Insight-content{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Itemtitle-wrapper{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item-title {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--dark-blue);
+    color: white;
+    margin: 0;
+    padding: 3px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.Item-logo{
+    width: 220px;
+    pointer-events: none;
+}
+
+.Do-wrapper{
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.Insight-image img{
+    height: 350px;
+    pointer-events: none;
+}
+
+@media (max-width: 1092px){
+    .Insight-image img{
+        height: 250px;
+    }
+}
+
+@media (max-width: 827px){
+    .Insightitem-wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .Insight-image img{
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .Insight-content{
+        margin-bottom: 10px;
+    }
+
+    .Item-logo{
+        width: 150px;
+    }
+
+    .Itemtitle-wrapper{
+        height: 60px;
+    }
+
+    .Item-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 473px){
+    .Insight-image img{
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .Item-logo{
+        width: 140px;
+    }
+
+    .Insight-content{
+        margin-bottom: 10px;
+    }
+
+    .Itemtitle-wrapper{
+        height: 50px;
+    }
+
+    .Do-wrapper{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .Item-title {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px){
+    .Insight-image img{
+        height: 160px;
+        margin-bottom: 10px;
+    }
+
+    .Insight-content{
+        margin-bottom: 10px;
+    }
+
+    .Item-logo{
+        width: 130px;
+    }
+
+    .Do-wrapper{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .Item-title {
+        font-size: 9px;
+    }
+}

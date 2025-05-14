@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --dark-blue: #123B8D;
+  --light-blue: #42B6E5;
+}
+
+/* Scrollbar untuk Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Scrollbar untuk Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #ffffff;
+  overflow-y: auto !important; 
+  overflow-x: hidden !important;
+
+  
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

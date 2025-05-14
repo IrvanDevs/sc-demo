@@ -1,0 +1,40 @@
+.ScrollToTop-btn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: white;
+    color: var(--dark-blue);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 600;
+    opacity: 0.7;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+
+.Arrow{
+    margin-right: 2px;
+}
+
+.ScrollToTop-btn p{
+    margin: 0;
+}
+
+.ScrollToTop-btn:hover {
+    opacity: 0.7;
+    transform: scale(1);
+}
+
+.ScrollToTop-btn:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+  
+.ScrollToTop-btn:focus {
+    outline: none;
+}
+  

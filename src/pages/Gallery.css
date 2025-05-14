@@ -1,0 +1,46 @@
+.Gallery-container{
+    width: 100%;
+    margin-top: 140px;
+}
+
+.Content-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Gallery-title p{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: var(--dark-blue);
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+.Gallery-scroll{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.Gallery-img{
+    margin: 0 15px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.Content-studio{
+    margin-top: 20px;
+}
+
+.Warehouse{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

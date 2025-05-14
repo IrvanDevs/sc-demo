@@ -1,0 +1,90 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.Intro-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+    background-color: #000000;
+    z-index: 0;
+}
+
+.Intro-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Video {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4; 
+    z-index: -1;
+    pointer-events: none;
+}
+
+.Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    margin-top: 280px;
+}
+
+.Intro-text {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    z-index: 2; 
+}
+
+.Intro-text span {
+    color: var(--light-blue);
+}
+
+@media (max-width: 768px) {
+    .Intro-container {
+        height: 700px;
+    }
+
+    .Content {
+        margin-top: 320px;
+    }
+
+    .Intro-text {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Intro-container {
+        height: 600px;
+    }
+
+    .Content {
+        margin-top: 280px;
+    }
+
+    .Intro-text {
+        font-size: 27px;
+        line-height: 27px;
+    }
+}
